@@ -35,8 +35,14 @@ a:active{
     display:grid;   
     align-self: center;
     row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 600px) {
+    p {
+      background-color: lightblue;
+    }
+  }
 
 p{
     color : hsl(39, 100%, 50%);  
@@ -71,4 +77,71 @@ summary{
 
 fieldset{
     color : var(--blue, violet);
+}
+
+p.flex-container{
+    background-color: pink;
+}
+
+li{
+    background-color: lightpink;
+}
+
+*{
+    background-color: lightsteelblue;
+}
+
+input[type="text"]{
+    border-style:groove;
+    border-radius: 5px;
+    border-color: burlywood;
+}
+
+p:hover{
+    border-style: dashed;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: burlywood;
+}
+
+i,
+em,
+span,
+strong{
+    border: burlywood 5px solid;
+    background-color: aquamarine;
+}
+
+ul li{
+    font-weight: 800;
+}
+
+footer > p{
+    background-color: chartreuse;
+    font-size: large;
+}
+
+h2 + p{
+    background-color: hotpink;
+    border: coral 2px dashed;
+}
+
+h2 ~ p{
+    background-color: orangered;
+    border: coral 5px solid;
+}
+
+h2:has(+ p) {
+    color:rgb(98, 174, 229);
+    font-weight: 900;
+    background-color: rgb(235, 127, 193);
+}
+
+.nested-example{
+    & > a{
+        color: tomato;
+        &:hover{
+            border: firebrick 10px dashed;
+        }
+    }
 }
