@@ -11,5 +11,4 @@
 2. Work with other teams to establish clear lines about styling, HTML, and JS dependencies.
 
 
-### Potential Issues
-1. HTML Team hasn't been on top of their work, need to talk with them to address that
+### Potential Issues 
