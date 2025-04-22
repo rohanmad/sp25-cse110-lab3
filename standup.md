@@ -1,5 +1,8 @@
 # Daily Standup Meeting Template
 
+### Date and Name
+Rohan Madan, 4/21/25
+
 ### What I accomplished yesterday
 1. Finished the card dealing algorithm
 2. Added a shuffling algorithm for the deck of cards
