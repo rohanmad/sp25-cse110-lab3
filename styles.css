@@ -1,3 +1,4 @@
+/* Style for all <h1> headers: vibrant color, dashed border, centered and sticky */
 h1{
     color : rgb(28, 186, 183);
     background-color: bisque;
@@ -12,25 +13,26 @@ h1{
     position: sticky;
 }
 
-
-
+/* Changes <button> appearance when hovered */
 button:hover{
     color : navajowhite;
     background-color: black;
 }
 
+/* Style active links (clicked state) */
 a:active{
     color: blue;
 }
 
+/* Flex container setup for layout with space between children */
 .flex-container{
     display:flex;
     flex-direction:row;
     justify-content: space-around;
     align-items: baseline;
-
 }
 
+/* Grid container layout with two columns and row spacing */
 .grid-container{
     display:grid;   
     align-self: center;
@@ -38,12 +40,14 @@ a:active{
     grid-template-columns: 1fr 1fr;
 }
 
+/* Media query for screens under 600px — changes <p> background */
 @media only screen and (max-width: 600px) {
     p {
       background-color: lightblue;
     }
-  }
+}
 
+/* Base style for all <p> elements — warm orange, custom font, centered */
 p{
     color : hsl(39, 100%, 50%);  
     font-size: 25px;
@@ -53,11 +57,13 @@ p{
     font-family: "Josefin Sans";
 }
 
+/* Style for <span> text — purple color and inline-block */
 span{
     color:blueviolet;
     display: inline-block;
 }
 
+/* Style for <ul> — semi-transparent red text and margin/padding setup */
 ul{
     color: color(srgb 1 0 0 / 0.5);
     width:90%;
@@ -68,34 +74,41 @@ ul{
     font-family: "Josefin Sans";
 }
 
+/* Style for <summary> tag with mixed color and margin */
 summary{
     color: color-mix(srgb, red 60%, blue 40%);
     margin-bottom: 1.5rem;
     margin: 10px 15px 10px 15px;
 }
 
+/* Style <fieldset> text color using a fallback variable */
 fieldset{
     color : var(--blue, violet);
 }
 
+/* Specific override for <p> with class "flex-container" */
 p.flex-container{
     background-color: pink;
 }
 
+/* Background for list items */
 li{
     background-color: lightpink;
 }
 
+/* Global default background for all elements */
 *{
     background-color: lightsteelblue;
 }
 
+/* Styling for <input type="text"> fields */
 input[type="text"]{
     border-style:groove;
     border-radius: 5px;
     border-color: burlywood;
 }
 
+/* Hover effect for <p> — burlywood dashed border and rounding */
 p:hover{
     border-style: dashed;
     border-radius: 20px;
@@ -103,6 +116,7 @@ p:hover{
     border-color: burlywood;
 }
 
+/* Unified style for emphasized/inline elements — border and highlight */
 i,
 em,
 span,
@@ -111,31 +125,37 @@ strong{
     background-color: aquamarine;
 }
 
+/* Bold list items inside unordered lists */
 ul li{
     font-weight: 800;
 }
 
+/* <p> inside <footer> — bright background and larger font */
 footer > p{
     background-color: chartreuse;
     font-size: large;
 }
 
+/* <p> directly after an <h2> gets hotpink background and dashed border */
 h2 + p{
     background-color: hotpink;
     border: coral 2px dashed;
 }
 
+/* Any <p> following an <h2> gets orange-red background and solid border */
 h2 ~ p{
     background-color: orangered;
     border: coral 5px solid;
 }
 
+/* If <h2> is followed by a <p>, give it a vibrant style */
 h2:has(+ p) {
     color:rgb(98, 174, 229);
     font-weight: 900;
     background-color: rgb(235, 127, 193);
 }
 
+/* SCSS-style nested selector — needs to be flattened if using plain CSS */
 .nested-example{
     & > a{
         color: tomato;
