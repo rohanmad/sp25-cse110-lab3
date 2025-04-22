@@ -14,3 +14,8 @@
 ### Potential Issues 
 1. HTML team hasn't been on top of their work, they are behind based on my JS code. 
 2. Confront the HTML team about their work and how they need to get on top of it. 
+
+
+### Tasks Needed to be Implemented
+1. Deploy the webpage so users can access it. 
+2. Polish the Blackjack game, test for edge cases, specifically when dealed an Ace.
