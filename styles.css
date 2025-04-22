@@ -46,7 +46,6 @@ a:active{
 
 p{
     color : hsl(39, 100%, 50%);  
-    font-weight: 10cm;
     font-size: 25px;
     margin: auto;
     display: block;
@@ -60,7 +59,7 @@ span{
 }
 
 ul{
-    color: color(display-p3 1 0 0);
+    color: color(srgb 1 0 0 / 0.5);
     width:90%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -70,7 +69,7 @@ ul{
 }
 
 summary{
-    color: color-mix(in srgb, red 60%, blue 40%);
+    color: color-mix(srgb, red 60%, blue 40%);
     margin-bottom: 1.5rem;
     margin: 10px 15px 10px 15px;
 }
