@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" />
     <title>
         Meeting Minutes
@@ -13,24 +17,26 @@
         Pomodoro Timer First Brainstorm
       </h1>
       <header>
-            <sub>
+            <sub style="color:#f67e65">
             Meeting topic: check-ins and brainstorming
             <br>
             Date: 4/13/25
         </sub>
         <br><br>
-        <p>Attendance List:</p>
-        <br>
-        <ul>
-            <li>Rohan Madan</li>
-            <li>Lavin Ma</li>
-            <li>Jackie Brown</li>
-        </ul>
+        <div class = "flex-container">
+          <p>Attendance List:</p>
+          <br>
+          <ul>
+              <li>Rohan Madan</li>
+              <li>Lavin Ma</li>
+              <li>Jackie Brown</li>
+          </ul>
+        </div>
       </header>
       
     </main>
       <br>
-        <div>
+        <div class = "flex-container">
             <p>Meeting Agenda:</p>
             <ul>
                 <li>Brainstorm ideas for CSE110 Project</li>
@@ -47,12 +53,14 @@
         </ul>
         <br>
         <br>
-        New Business:
-        <ol>
-            <li>Discuss the <i>lacking team member and what to do with</i> him</li>
-            <li>Disucss technologies we want to use in our projects</li>
-            <li>Discuss <em>timeframe for both </em>projects</li>
-        </ol>
+        <div class = "grid-container">
+          New Business:
+          <ol>
+              <li>Discuss the <i>lacking team member and what to do with</i> him</li>
+              <li>Disucss technologies we want to use in our projects</li>
+              <li>Discuss <em>timeframe for both </em>projects</li>
+          </ol>
+        </div>
       <br>
     
       <br>
@@ -85,13 +93,14 @@
         </select>
       
       <hr>
-
+      
       <section>
-        <h2>Miscellaneous comments/questions/concerns</h2>
-        <p>
-            Rohan had a question about the <b>timeline</b> for the <strong>project</strong>. Said he would be going on vacation in June. He wants a fully fleshed out timeline to make sure he won't miss anything. 
-        </p>
-
+        <div class = "grid-container">
+          <h2>Miscellaneous comments/questions/concerns</h2>
+          <p>
+              Rohan had a question about the <b>timeline</b> for the <strong>project</strong>. Said he would be going on vacation in June. He wants a fully fleshed out timeline to make sure he won't miss anything. 
+          </p>
+        </div>
         <label for="question">Please choose the month you believe the project will be done by:</label>
         <input list="questions" name="question" id="question">
 

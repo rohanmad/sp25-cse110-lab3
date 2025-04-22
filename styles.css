@@ -1,0 +1,74 @@
+h1{
+    color : rgb(28, 186, 183);
+    background-color: bisque;
+    margin-top: 2pt;
+    font-size: 2em;
+    border-style: dashed;
+    border-color: chartreuse;
+    border-width: 2cm;
+    border-radius: 1cm;
+    text-align: center;
+    text-decoration: wavy;
+    position: sticky;
+}
+
+
+
+button:hover{
+    color : navajowhite;
+    background-color: black;
+}
+
+a:active{
+    color: blue;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+.grid-container{
+    display:grid;   
+    align-self: center;
+    row-gap: 1rem;
+}
+
+
+p{
+    color : hsl(39, 100%, 50%);  
+    font-weight: 10cm;
+    font-size: 25px;
+    margin: auto;
+    display: block;
+    position:relative;
+    font-family: "Josefin Sans";
+}
+
+span{
+    color:blueviolet;
+    display: inline-block;
+}
+
+ul{
+    color: color(display-p3 1 0 0);
+    width:90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: "Josefin Sans";
+}
+
+summary{
+    color: color-mix(in srgb, red 60%, blue 40%);
+    margin-bottom: 1.5rem;
+    margin: 10px 15px 10px 15px;
+}
+
+fieldset{
+    color : var(--blue, violet);
+}
