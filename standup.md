@@ -12,3 +12,5 @@
 
 
 ### Potential Issues 
+1. HTML team hasn't been on top of their work, they are behind based on my JS code. 
+2. Confront the HTML team about their work and how they need to get on top of it. 
